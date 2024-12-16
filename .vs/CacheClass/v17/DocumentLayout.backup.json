@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\controllers\\learnerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\controllers\\learnerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\models\\ml2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\models\\ml2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|c:\\users\\lanah\\source\\repos\\cacheclass\\cacheclass\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195CED-B623-490B-B84F-ED1D0538AAFD}|CacheClass\\CacheClass.csproj|solutionrelative:cacheclass\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LearnersController.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\LearnersController.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Controllers\\LearnersController.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\LearnersController.cs",
+              "RelativeToolTip": "CacheClass\\Controllers\\LearnersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:47:18.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InstructorsController.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\InstructorsController.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Controllers\\InstructorsController.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\InstructorsController.cs",
+              "RelativeToolTip": "CacheClass\\Controllers\\InstructorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:47:16.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CacheClass\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:47:13.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CacheClass\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:47:08.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CacheClass\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:47:06.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CacheClass\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CacheClass\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T17:17:40.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "CacheClass\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAA+wJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T00:26:45.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ml2Context.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Models\\Ml2Context.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Models\\Ml2Context.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Models\\Ml2Context.cs",
+              "RelativeToolTip": "CacheClass\\Models\\Ml2Context.cs",
+              "ViewState": "AgIAADkEAAAAAAAAAAAIwGAEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T00:12:42.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "CacheClass\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Lanah\\source\\repos\\CacheClass\\CacheClass\\Models\\Account.cs",
+              "RelativeToolTip": "CacheClass\\Models\\Account.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T00:05:31.404Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

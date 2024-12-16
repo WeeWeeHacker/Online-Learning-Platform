@@ -1,0 +1,19 @@
+﻿@model CacheClass.Models.Account
+
+@{
+    ViewData["Title"] = "Delete Account";
+}
+
+<h1>Are you sure you want to delete this account?</h1>
+
+<div>
+    <strong>Username:</strong> @Model.Username
+</div>
+<div>
+    <strong>Email:</strong> @Model.Email
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a href="@Url.Action("Index", "Account")" class="btn btn-secondary">Cancel</a>
+</form>

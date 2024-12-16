@@ -1,0 +1,8 @@
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.csproj.AssemblyReference.cache
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.AssemblyInfoInputs.cache
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.AssemblyInfo.cs
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.csproj.CoreCompileInputs.cache
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.RazorAssemblyInfo.cache
+C:\Users\Lanah\source\repos\CacheClass\obj\Debug\net8.0\CacheClass.RazorAssemblyInfo.cs

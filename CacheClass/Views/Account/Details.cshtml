@@ -1,0 +1,18 @@
+﻿@model CacheClass.Models.Account
+
+@{
+    ViewData["Title"] = "Account Details";
+}
+
+<h1>Account Details</h1>
+
+<div>
+    <strong>Username:</strong> @Model.Username
+</div>
+<div>
+    <strong>Email:</strong> @Model.Email
+</div>
+
+<div>
+    <a href="@Url.Action("Index", "Account")" class="btn btn-secondary">Back to List</a>
+</div>

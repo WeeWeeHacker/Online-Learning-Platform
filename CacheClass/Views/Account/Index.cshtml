@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CacheClass.Models.Account>
+
+@{
+    ViewData["Title"] = "Account List";
+}
+
+<h1>Account List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@account.Username</td>
+                <td>@account.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

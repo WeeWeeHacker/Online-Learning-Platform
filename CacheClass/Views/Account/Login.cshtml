@@ -1,0 +1,51 @@
+@model CacheClass.Models.Account
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Login</h2>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Login" method="post">
+                        <div class="form-group mb-3">
+                            <label for="LoginIdentifier" class="form-label">Username or Email</label>
+                            <input id="LoginIdentifier" name="LoginIdentifier" class="form-control" placeholder="Enter username or email" required />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="PasswordHash" class="form-label">Password</label>
+                            <input asp-for="PasswordHash" type="password" class="form-control" placeholder="Enter your password" required />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Role" class="form-label">Select Role</label>
+                            <select asp-for="Role" class="form-control" required>
+                                <option value="">Select a Role</option>
+                                <option value="Instructor">Instructor</option>
+                                <option value="Learner">Learner</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <p class="mb-0">Don't have an account? <a asp-area="" asp-controller="Account" asp-action="Create" class="text-primary">Sign up</a></p>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="/Home/Index" class="text-muted">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+﻿@model IEnumerable<CacheClass.Models.Instructor>
+
+@{
+    ViewData["Title"] = "Instructors";
+}
+
+<div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h2 text-primary">Instructor Management</h1>
+        <a asp-action="Create" class="btn btn-success btn-lg">
+            <i class="fas fa-plus-circle me-2"></i>Add New Instructor
+        </a>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-light">
+            <i class="fas fa-search me-2"></i>Search and Filter
+        </div>
+        <div class="card-body">
+            <form method="get" asp-action="Index" class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" name="search" class="form-control"
+                           placeholder="Search by name, specialty, or email..."
+                           value="@ViewData["SearchQuery"]" />
+                </div>
+                <div class="col-md-3">
+                    <select name="specialty" class="form-select">
+                        <option value="">All Specialties</option>
+                        <!-- Add specialty options dynamically if possible -->
+                        <option value="Language">Language</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Science">Science</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-filter me-2"></i>Apply Filters
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Instructors Table -->
+    @if (Model != null && Model.Any())
+    {
+        <div class="card">
+            <div class="card-header bg-light">
+                <i class="fas fa-table me-2"></i>Instructors List
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="table-dark">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.InstructorId)</th>
+                            <th>@Html.DisplayNameFor(model => model.Name)</th>
+                            <th>@Html.DisplayNameFor(model => model.LastestQualification)</th>
+                            <th>@Html.DisplayNameFor(model => model.ExpertiseArea)</th>
+                            <th>@Html.DisplayNameFor(model => model.Email)</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.InstructorId)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => item.LastestQualification)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ExpertiseArea)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Edit" asp-route-id="@item.InstructorId"
+                                           class="btn btn-sm btn-outline-warning"
+                                           title="Edit Instructor">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-action="Details" asp-route-id="@item.InstructorId"
+                                           class="btn btn-sm btn-outline-info"
+                                           title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a asp-action="Delete" asp-route-id="@item.InstructorId"
+                                           class="btn btn-sm btn-outline-danger"
+                                           title="Delete Instructor">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="card">
+            <div class="card-body text-center">
+                <p class="text-muted">
+                    <i class="fas fa-exclamation-circle me-2"></i>
+                    No instructors found. Try adjusting your search or filter.
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Optional: Add hover effect and cursor change
+            $('.table-responsive tr').hover(
+                function() { $(this).addClass('table-active'); },
+                function() { $(this).removeClass('table-active'); }
+            );
+        });
+    </script>
+}

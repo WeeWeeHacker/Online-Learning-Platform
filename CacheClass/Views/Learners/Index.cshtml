@@ -1,0 +1,127 @@
+﻿@model IEnumerable<CacheClass.Models.Learner>
+
+@{
+    ViewData["Title"] = "Learners";
+}
+
+<div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h2 text-primary">Learner Management</h1>
+        <a asp-action="Create" class="btn btn-success btn-lg">
+            <i class="fas fa-plus-circle me-2"></i>Add New Learner
+        </a>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-light">
+            <i class="fas fa-search me-2"></i>Search and Filter
+        </div>
+        <div class="card-body">
+            <form method="get" asp-action="Index" class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" name="search" class="form-control"
+                           placeholder="Search by name, country, or background..."
+                           value="@ViewData["SearchQuery"]" />
+                </div>
+                <div class="col-md-3">
+                    <select name="gender" class="form-select">
+                        <option value="">All Genders</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-filter me-2"></i>Apply Filters
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Learners Table -->
+    <div class="card">
+        <div class="card-header bg-light">
+            <i class="fas fa-table me-2"></i>Learners List
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Birth Date</th>
+                        <th>Country</th>
+                        <th>Cultural Background</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center text-muted py-4">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                No learners found. Try adjusting your search or filter.
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="ms-3">
+                                            <p class="fw-bold mb-1">@item.FirstName @item.LastName</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>@item.Gender</td>
+                                <td>@(item.BirthDate.HasValue ? item.BirthDate.Value.ToString("yyyy-MM-dd") : "N/A")</td>
+                                <td>@item.Country</td>
+                                <td>@item.CulturalBackground</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Edit" asp-route-id="@item.LearnerID"
+                                           class="btn btn-sm btn-outline-warning"
+                                           title="Edit Learner">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-action="Details" asp-route-id="@item.LearnerID"
+                                           class="btn btn-sm btn-outline-info"
+                                           title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a asp-action="Delete" asp-route-id="@item.LearnerID"
+                                           class="btn btn-sm btn-outline-danger"
+                                           title="Delete Learner">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Optional: Add hover effect and cursor change
+            $('.table-responsive tr').hover(
+                function() { $(this).addClass('table-active'); },
+                function() { $(this).removeClass('table-active'); }
+            );
+        });
+    </script>
+}
