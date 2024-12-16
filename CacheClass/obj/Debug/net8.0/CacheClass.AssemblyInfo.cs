@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CacheClass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d56fe88d13e1546aa8e213b6293338cdb4f5643")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c14823ddda575e7c6c0e2c5c376c178af115cb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CacheClass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CacheClass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
