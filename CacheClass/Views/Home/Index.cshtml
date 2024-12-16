@@ -1,33 +1,125 @@
-﻿@{
-    ViewData["Title"] = "Welcome to Cache Class";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Class - Choose Your Role</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --danger-gradient: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+        }
 
-<div class="container-fluid">
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .card-learner {
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .card-instructor {
+            background: var(--success-gradient);
+            color: white;
+        }
+
+        .card-admin {
+            background: var(--danger-gradient);
+            color: white;
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotateX(10deg);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .card-body {
+            backdrop-filter: blur(5px);
+        }
+
+        .card-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .btn-create-account {
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-create-account:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .header-title {
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating-icon {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid py-5">
     <div class="row">
-        <div class="col-12 text-center my-4">
-            <h1 class="display-4 fw-bold text-primary">Cache Class</h1>
-            <p class="lead text-muted mb-5">Choose Your Role</p>
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4 fw-bold header-title">Cache Class</h1>
+            <p class="lead text-muted">Your Learning Journey Starts Here</p>
         </div>
     </div>
 
     <div class="row justify-content-center g-4">
         <!-- Learner Card -->
         <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm border-primary">
+            <div class="card h-100 card-learner text-white border-0">
                 <div class="card-body d-flex flex-column text-center">
-                    <div class="mb-3">
-                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
-                        <h5 class="card-title">Learner</h5>
-                        <p class="card-text text-muted">
-                            Access learning resources, track progress,
-                            and engage with interactive content.
-                        </p>
-                    </div>
+                    <i class="fas fa-graduation-cap fa-3x mb-3 card-icon floating-icon text-white"></i>
+                    <h5 class="card-title">Learner Portal</h5>
+                    <p class="card-text mb-4">
+                        Dive into interactive learning resources,
+                        track your progress, and unlock your potential.
+                    </p>
                     <a asp-controller="Learners"
                        asp-action="Index"
-                       class="btn btn-primary mt-auto"
-                       aria-label="Learner Login">
-                        Learner Portal
+                       class="btn btn-light mt-auto">
+                        Enter Learner Portal
                     </a>
                 </div>
             </div>
@@ -35,21 +127,18 @@
 
         <!-- Instructor Card -->
         <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm border-success">
+            <div class="card h-100 card-instructor text-white border-0">
                 <div class="card-body d-flex flex-column text-center">
-                    <div class="mb-3">
-                        <i class="fas fa-chalkboard-teacher fa-3x text-success mb-3"></i>
-                        <h5 class="card-title">Instructor</h5>
-                        <p class="card-text text-muted">
-                            Manage courses, assess learner performance,
-                            and create engaging learning experiences.
-                        </p>
-                    </div>
+                    <i class="fas fa-chalkboard-teacher fa-3x mb-3 card-icon floating-icon text-white"></i>
+                    <h5 class="card-title">Instructor Portal</h5>
+                    <p class="card-text mb-4">
+                        Create transformative learning experiences,
+                        manage courses, and inspire your students.
+                    </p>
                     <a asp-controller="Instructors"
                        asp-action="Index"
-                       class="btn btn-success mt-auto"
-                       aria-label="Instructor Login">
-                        Instructor Portal
+                       class="btn btn-light mt-auto">
+                        Enter Instructor Portal
                     </a>
                 </div>
             </div>
@@ -57,46 +146,45 @@
 
         <!-- Admin Card -->
         <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm border-danger">
+            <div class="card h-100 card-admin text-white border-0">
                 <div class="card-body d-flex flex-column text-center">
-                    <div class="mb-3">
-                        <i class="fas fa-user-shield fa-3x text-danger mb-3"></i>
-                        <h5 class="card-title">Admin</h5>
-                        <p class="card-text text-muted">
-                            Manage platform settings, user management,
-                            and system-wide configurations.
-                        </p>
-                    </div>
+                    <i class="fas fa-user-shield fa-3x mb-3 card-icon floating-icon text-white"></i>
+                    <h5 class="card-title">Admin Portal</h5>
+                    <p class="card-text mb-4">
+                        Oversee platform operations, manage user
+                        access, and configure system settings.
+                    </p>
                     <a asp-controller="Admin"
                        asp-action="Login"
-                       class="btn btn-danger mt-auto"
-                       aria-label="Admin Login">
-                        Admin Portal
+                       class="btn btn-light mt-auto">
+                        Enter Admin Portal
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row mt-4 justify-content-center">
+    <div class="row mt-5 justify-content-center">
         <div class="col-12 col-md-4 text-center">
             <a asp-controller="Account"
                asp-action="Create"
-               class="btn btn-outline-info btn-lg w-100"
-               aria-label="Create New Account">
+               class="btn btn-create-account btn-lg w-100 text-white">
                 Create New Account
             </a>
         </div>
     </div>
 </div>
 
-@section Scripts {
-    <script>
-        $(document).ready(function() {
-            $('.card').hover(
-                function() { $(this).addClass('shadow-lg'); },
-                function() { $(this).removeClass('shadow-lg'); }
-            );
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.card').on('mouseenter', function() {
+            $(this).find('.card-icon').addClass('pulse');
+        }).on('mouseleave', function() {
+            $(this).find('.card-icon').removeClass('pulse');
         });
-    </script>
-}
+    });
+</script>
+</body>
+</html>

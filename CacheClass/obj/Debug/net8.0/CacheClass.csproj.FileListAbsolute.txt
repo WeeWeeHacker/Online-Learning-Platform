@@ -270,3 +270,4 @@
 /Users/weewee/Downloads/CacheClass/CacheClass/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
 /Users/weewee/Downloads/CacheClass/CacheClass/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/weewee/Downloads/CacheClass/CacheClass/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/weewee/Downloads/CacheClass/CacheClass/obj/Debug/net8.0/CacheClass.sourcelink.json
