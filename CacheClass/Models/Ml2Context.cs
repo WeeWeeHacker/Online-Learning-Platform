@@ -1189,4 +1189,5 @@ public partial class Ml2Context : IdentityDbContext
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 
     public DbSet<CacheClass.Models.Admin> Admin { get; set; }
+    public DbSet<Score> Scores { get; set; }
 }

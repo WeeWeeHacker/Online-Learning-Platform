@@ -85,14 +85,17 @@ namespace CacheClass.Controllers
         }
         // *** END PROFILE FUNCTIONALITY ***
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var learners = _context.Learners.ToList();
             if (learners == null)
             {
                 learners = new List<Learner>();
             }
-            return View(learners);
+            return View(await _context.Learners.ToListAsync());
         }
+        
+        // GET: Learner/Index
+        
     }
 }

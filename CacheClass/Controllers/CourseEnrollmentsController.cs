@@ -49,7 +49,7 @@ namespace CacheClass.Controllers
         public IActionResult Create()
         {
             ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseId");
-            ViewData["LearnerID"] = new SelectList(_context.Learners, "LearnerID", "LearnerID");
+            ViewData["LearnerId"] = new SelectList(_context.Learners, "LearnerId", "LearnerId");
             return View();
         }
 
@@ -58,7 +58,7 @@ namespace CacheClass.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EnrollmentId,CourseId,LearnerID,CompletionDate,EnrollmentDate,Status")] CourseEnrollment courseEnrollment)
+        public async Task<IActionResult> Create([Bind("EnrollmentId,CourseId,LearnerId,CompletionDate,EnrollmentDate,Status")] CourseEnrollment courseEnrollment)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +67,7 @@ namespace CacheClass.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseId", courseEnrollment.CourseId);
-            ViewData["LearnerID"] = new SelectList(_context.Learners, "LearnerID", "LearnerID", courseEnrollment.LearnerID);
+            ViewData["LearnerId"] = new SelectList(_context.Learners, "LearnerId", "LearnerId", courseEnrollment.LearnerID);
             return View(courseEnrollment);
         }
 
@@ -85,7 +85,7 @@ namespace CacheClass.Controllers
                 return NotFound();
             }
             ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseId", courseEnrollment.CourseId);
-            ViewData["LearnerID"] = new SelectList(_context.Learners, "LearnerID", "LearnerID", courseEnrollment.LearnerID);
+            ViewData["LearnerId"] = new SelectList(_context.Learners, "LearnerId", "LearnerId", courseEnrollment.LearnerID);
             return View(courseEnrollment);
         }
 
@@ -94,7 +94,7 @@ namespace CacheClass.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EnrollmentId,CourseId,LearnerID,CompletionDate,EnrollmentDate,Status")] CourseEnrollment courseEnrollment)
+        public async Task<IActionResult> Edit(int id, [Bind("EnrollmentId,CourseId,LearnerId,CompletionDate,EnrollmentDate,Status")] CourseEnrollment courseEnrollment)
         {
             if (id != courseEnrollment.EnrollmentId)
             {
@@ -122,7 +122,7 @@ namespace CacheClass.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CourseId"] = new SelectList(_context.Courses, "CourseId", "CourseId", courseEnrollment.CourseId);
-            ViewData["LearnerID"] = new SelectList(_context.Learners, "LearnerID", "LearnerID", courseEnrollment.LearnerID);
+            ViewData["LearnerId"] = new SelectList(_context.Learners, "LearnerId", "LearnerId", courseEnrollment.LearnerID);
             return View(courseEnrollment);
         }
 

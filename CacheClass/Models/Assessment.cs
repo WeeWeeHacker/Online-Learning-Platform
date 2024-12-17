@@ -5,7 +5,10 @@ namespace CacheClass.Models;
 
 public partial class Assessment
 {
-    public int Id { get; set; }
+    
+    public int Id {get; set;}
+
+    public ICollection<Score> Scores{get;set;}
 
     public int? ModuleId { get; set; }
 
